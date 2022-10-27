@@ -1,4 +1,6 @@
-﻿namespace LeetCode_CSharp
+﻿using System;
+
+namespace LeetCode_CSharp
 {
     internal class Program
     {

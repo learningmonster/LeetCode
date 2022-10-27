@@ -10,7 +10,8 @@ namespace LeetCode_CSharp
     {
         public TwoSumSolution()
         {
-            string inputFile = @"D:\Projects\ProgrammingChallenges\LeetCode\LeetCode\TestCases\0001_TwoSum.txt";
+            string inputFile = "0001_TwoSum.txt";
+
             string[] lines = FileOperations.ReadLinesInFile(inputFile);
 
             int i = 0;
@@ -25,7 +26,7 @@ namespace LeetCode_CSharp
             {
                 i++;
 
-                if (i%2 == 1)
+                if (i % 2 == 1)
                 {
                     Console.WriteLine("Testing input {0}...", line);
                     nums = ArrayOperations.ConvertBracketListToIntegerArray(line);
@@ -68,7 +69,7 @@ namespace LeetCode_CSharp
             }
 
             int lowPosition = Array.IndexOf(nums, sortedNums[low]);
-            
+
             // temporarily remember the value at the low position
             int valueAtLowPosition = nums[lowPosition];
 

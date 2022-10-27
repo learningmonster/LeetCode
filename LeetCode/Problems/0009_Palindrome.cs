@@ -11,12 +11,12 @@ namespace LeetCode_CSharp
 
         public Palindrome()
         {
-            string inputFile = @"D:\Projects\ProgrammingChallenges\LeetCode\LeetCode\TestCases\0009_Palindrome.txt";
+            string inputFile = "0009_Palindrome.txt";
             string[] lines = FileOperations.ReadLinesInFile(inputFile);
 
             bool isValidInput = false;
             int testNumber = 0;
-            
+
             System.Console.WriteLine("Input file has been read.\n");
             Console.WriteLine();
 

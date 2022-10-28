@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/LeetCode_Python/class3.py
+/LeetCode_Python/PythonClassTemplate.py

@@ -3,10 +3,12 @@
     internal class FileOperations
     {
         // TODO: Set folder location as a configurable setting
-        static string TestCasesFolder = @"D:\Projects\ProgrammingChallenges\LeetCode\TestCases\";
+        static string TestCasesFolder = @"../TestCases/";
 
         // TestCases location under Linux:
         // static string TestCasesFolder = "~/Learning/LeetCode/LeetCode/TestCases/";
+        // static string TestCasesFolder = @"~/Learning/LeetCode/LeetCode/TestCases/";
+        // static string TestCasesFolder = @"../TestCases/";
 
         // TestCases location under Windows:
         // static string TestCasesFolder = @"D:\Projects\ProgrammingChallenges\LeetCode\TestCases\";

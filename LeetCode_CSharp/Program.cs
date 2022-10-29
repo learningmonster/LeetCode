@@ -26,7 +26,7 @@ namespace LeetCode_CSharp
                 while (!isValidInput)
                 {
                     Console.WriteLine("Enter a problem number from the list above:");
-                    string userChoice = Console.ReadLine();
+                    string? userChoice = Console.ReadLine();
                     isValidInput = int.TryParse(userChoice, out problemNumber);
 
                     if (!isValidInput)
@@ -54,7 +54,7 @@ namespace LeetCode_CSharp
                             Console.WriteLine();
                             break;
                         }
-                        
+
                 }
 
                 if (problemNumber == 0)

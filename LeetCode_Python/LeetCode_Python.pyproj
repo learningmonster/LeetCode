@@ -21,8 +21,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ProblemsModule.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="LeetCode_Python.py" />
-    <Compile Include="Problems\0014_LongestCommonPrefix.py">
+    <Compile Include="Problems\LongestCommonPrefix_0014.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UtilitiesModule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\FileOperationsModule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\ListOperationsModule.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -32,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include=".vsls.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

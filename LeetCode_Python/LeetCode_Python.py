@@ -1,10 +1,24 @@
-# import statements
+#import sys
+
+#for p in sys.path:
+#    print( p )
+
+from ProblemsModule import *
+
+#import inspect
+
+#for name, obj in inspect.getmembers(ProblemsModule):
+#    if inspect.isclass(obj):
+#        print ('obj = ' + str(obj))
+
+
 
 def Main():
+    #print(f"__name__1 = {__name__}")
     forever = True
 
     while forever:
-        print("Welcome to the Leetcode solutions using Python.")
+        print("\nWelcome to the Leetcode solutions using Python.")
         print()
 
         print("Solved Problems - ")
@@ -27,10 +41,14 @@ def Main():
                 print(f"{userChoice} is invalid input! Please enter an integer value only.\n")
 
         match problemNumber:
-            case 15:
+            case 14:
                 print("You chose # 14. Longest Common Prefix\n")
-                #TwoSumSolution twoSum = new TwoSumSolution()
                 prefixFinder = LongestCommonPrefix()
+                #stringArray = ["substring", "substance", "substandard", "subs"]
+                #print(f"Typeof(stringArray) = {type(stringArray)}")
+                #print(f"stringArray1 = {stringArray}\n")
+                #result = prefixFinder.longestCommonPrefix(stringArray)
+                #print(f"LongestMatchingPrefix={result}\n")
 
             case 0:
                 forever = False
@@ -42,4 +60,5 @@ def Main():
 
 
 if __name__ == '__main__':
+    print(f"__name__2 = {__name__}")
     Main()

@@ -1,3 +1,4 @@
+
 #class _0014_LongestCommonPrefix(object):
 #    """description of class"""
 
@@ -16,11 +17,14 @@ class LongestCommonPrefix(object):
         """
 
         shortestStringLength = 201
-        numStrings = strs.length
+        #numStrings = strs.length
+        numStrings = len(strs)
 
         for stringIndex in range(numStrings):
-            if (strs[stringIndex].length < shortestStringLength):
-                shortestStringLength = strs[stringIndex].length
+            #if (strs[stringIndex].length < shortestStringLength):
+            if (len(strs[stringIndex]) < shortestStringLength):
+                #shortestStringLength = strs[stringIndex].length
+                shortestStringLength = len(strs[stringIndex])
 
         LongestMatchingPrefix = ''
 
@@ -35,18 +39,7 @@ class LongestCommonPrefix(object):
 
             if currentLetterMatches:
                 LongestMatchingPrefix += currentLetter
-            
-        return LongestMatchingPrefix
-
-
-
-
-
-            
-
-
-
         
-
-
+        print(f"LongestMatchingPrefix={LongestMatchingPrefix}")
+        return LongestMatchingPrefix
 

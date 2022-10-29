@@ -1,2 +1,2 @@
-["substring", "substance", "substandard", "subs"]
+["substring", "substance", "substandard", "subservient"]
 ["animal", "animated", "animation", "animalistic"]

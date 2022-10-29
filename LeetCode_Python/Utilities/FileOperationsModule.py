@@ -2,8 +2,13 @@ import os.path
 
 class FileOperations(object):
     """description of class"""
-
-    TestCasesFolder = "D:\\Projects\\ProgrammingChallenges\\LeetCode\\TestCases\\"
+    
+    # Under Linux
+    TestCasesFolder = "../TestCases/"
+    # TestCases/0014_LongestCommonPrefix.txt
+    
+    # Under Windows
+    # TestCasesFolder = "D:\\Projects\\ProgrammingChallenges\\LeetCode\\TestCases\\"
 
     def __init__(self):
         print("Initializing FileOperations object...\n")
@@ -52,6 +57,7 @@ class FileOperations(object):
             
         if not os.path.isfile(FullFilePath):
             print('File does not exist.')
+            lines = None
         else:
             #Read each line of the file into a string array. Each element
             #of the array is one line of the file.

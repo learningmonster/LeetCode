@@ -39,8 +39,8 @@ class FileOperations(object):
         
         if not os.path.isfile(FullFilePath):
             print('File does not exist.')
-            with open(FullFilePath, 'r', encoding='utf8') as FileReader:
-                lines = FileReader.readlines()
+            # with open(FullFilePath, 'r', encoding='utf8') as FileReader:
+            #     lines = FileReader.readlines()
             # lines = None
         else:
             #Read each line of the file into a string array. Each element
@@ -51,6 +51,3 @@ class FileOperations(object):
         return lines
 
 print(f"__name__14 = {__name__}\n")
-
-
-
